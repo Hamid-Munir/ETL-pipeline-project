@@ -38,7 +38,7 @@ def test_transform():
     ]
     expected = [
         {
-            "Date-Time": "2021-02-23 09:00:48",
+            "Date-Time": 1614070848,
             "location": "Isle of Wight",
             "items": [
                 {"size": "Large", "type": "", "name": "Hot chocolate", "price": "2.9"},
@@ -51,6 +51,7 @@ def test_transform():
     ]
 
     actual = transform(fake_df)
+    print(actual)
     assert actual == expected
 
 
@@ -69,7 +70,7 @@ def test_transform_run():
 
     expected = [
         {
-            "Date-Time": "2021-02-23 09:00:48",
+            "Date-Time": 1614070848,
             "location": "Isle of Wight",
             "items": [
                 {"size": "Large", "type": "", "name": "Hot chocolate", "price": "2.9"},
